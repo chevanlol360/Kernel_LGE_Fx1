@@ -1,7 +1,7 @@
-Android_Kernel_LGE_Fx1
+LGE_Kernel_Fx1_Zippy
 ======================
 
-LG-870 Zippy V4.2 Kernel. Also works on US-780
+LG870 Zippy V4.2 Kernel. Also works on US780
 
 How to Build
 ====================
@@ -21,10 +21,10 @@ First, we need to create directories for the build so open Terminal and issue th
     $ cd Device
     $ mkdir LG870
     $ cd LG870
-    $ mkdir SmpKernel
-    $ cd SmpKernel
+    $ mkdir ZipKernel
+    $ cd ZipKernel
 
-    $ git clone https://github.com/chevanlol360/Android_Kernel_LGE_Fx1
+    $ git clone https://github.com/chevanlol360/LGE_Kernel_Fx1_Zippy
 
 Now that you have the kernel source, you need to get toolchains:
 
@@ -37,14 +37,14 @@ Compiling Kernel
 Issue the following commands to build the kernel
 
     $ cd
-    $ cd Android/Kernel/Device/LG870/SmpKernel/Android_Kernel_LGE_Fx1
+    $ cd Android/Kernel/Device/LG870/ZipKernel
     $ export ARCH=arm
-    $ export CROSS_COMPILE=~/Android/Kernel/toolchains/android_prebuilt_toolchains/arm-eabi-linaro-4.6.2/bin/arm-eabi-
+    $ export CROSS_COMPILE=~/android/Kernels/toolchains/arm-cortex_a15-linux-gnueabihf-linaro/bin/arm-cortex_a15-linux-gnueabihf-
     $ make 1Zippy_defconfig
-    $ make -j2
+    $ make -j4
     
 
-When its done you'll find your zlmage under /arch/arm/boot Grabbed stock kernel from your phone and unpack the boot.img with Android Kitchen then go inside the unpacked folder and replace the zlmage in the folder with the one you just built. Then go back to the Simplicity Kernel Directory and copy the folder called "boot.img-ramdisk" and then go back to the Android Kitchen folder then go inside the unpakced folder again and delete the Folder inside called "boot.img-ramdisk" and then paste the folder you just copied from the kernel directory. Then Repack the boot.img with Android Kitchen and continue below.
+When its done you'll find your zlmage under /arch/arm/boot Grabbed stock kernel from your phone and unpack the boot.img with Android Kitchen then go inside the unpacked folder and replace the zlmage in the folder with the one you just built. Then go back to the Zippy Kernel Directory and copy the folder called "boot.img-ramdisk" and then go back to the Android Kitchen folder then go inside the unpakced folder again and delete the Folder inside called "boot.img-ramdisk" and then paste the folder you just copied from the kernel directory. Then Repack the boot.img with Android Kitchen and continue below.
 
 Loki'ing
 ====================
@@ -56,4 +56,4 @@ Issue the following commands to loki your kernel
     $ cd Loki
     $ git clone https://github.com/chevanlol360/loki
     
-Go inside the Loki folder and doubble click on the runkernel.sh file and open it with terminal and when its done a new file called smpboot.loki will be the output flash it to your device.  
+Go inside the Loki folder and doubble click on the runkernel.sh file and open it with terminal and when its done a new file called Zipboot.loki will be the output flash it to your device.  
