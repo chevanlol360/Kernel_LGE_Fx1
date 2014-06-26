@@ -2476,7 +2476,7 @@ config MSM_HSIC_SYSMON_TEST
 	  can be read and written to send character data to the sysmon port of
 	  the modem over USB.
 
-#####################SIMPLICITY ADDITIONS#####################
+#####################Zippy ADDITIONS#####################
 config FORCE_FAST_CHARGE
  	bool "Force AC charge mode at will"
  	default y
@@ -2484,7 +2484,19 @@ config FORCE_FAST_CHARGE
  	  A simple sysfs interface to force adapters that
  	  are detected as USB to charge as AC.
 
+config GPU_OVERCLOCK
+ 	bool "Enable GPU Overclocking option"
+ 	default y
+ 	help
+ 	  Adreno2xx overclocking up to 480 MHz
+
 endif
+
+config INTELLI_PLUG
+	bool "Enable intelli-plug cpu hotplug driver"
+	default n
+	help
+	  Generic Intelli-plug cpu hotplug driver for ARM SOCs
 
 config LGE_IRRC
 	   tristate "LGE_IRRC"

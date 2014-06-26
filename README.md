@@ -1,7 +1,7 @@
 Android_Kernel_LGE_Fx1
 ======================
 
-LG-870 Simplicity V3.0 Kernel. Also works on US-780
+LG-870 Zippy V4.2 Kernel. Also works on US-780
 
 How to Build
 ====================
@@ -40,7 +40,7 @@ Issue the following commands to build the kernel
     $ cd Android/Kernel/Device/LG870/SmpKernel/Android_Kernel_LGE_Fx1
     $ export ARCH=arm
     $ export CROSS_COMPILE=~/Android/Kernel/toolchains/android_prebuilt_toolchains/arm-eabi-linaro-4.6.2/bin/arm-eabi-
-    $ make 1Simple_defconfig
+    $ make 1Zippy_defconfig
     $ make -j2
     
 
