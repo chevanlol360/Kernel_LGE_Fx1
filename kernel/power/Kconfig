@@ -22,7 +22,7 @@ config HAS_WAKELOCK
 	bool
 
 config HAS_EARLYSUSPEND
-	bool
+	bool 
 
 config WAKELOCK
 	bool "Wake lock"

@@ -2492,12 +2492,6 @@ config GPU_OVERCLOCK
 
 endif
 
-config INTELLI_PLUG
-	bool "Enable intelli-plug cpu hotplug driver"
-	default n
-	help
-	  Generic Intelli-plug cpu hotplug driver for ARM SOCs
-
 config LGE_IRRC
 	   tristate "LGE_IRRC"
        default y
