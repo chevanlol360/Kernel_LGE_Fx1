@@ -2490,6 +2490,13 @@ config GPU_OVERCLOCK
  	help
  	  Adreno2xx overclocking up to 480 MHz
 
+config LOW_CPUCLOCKS
+	bool "Enable ultra low CPU clocks"
+	default y
+	help
+	  Ultra low cpu frequencies enabled for CPU
+
+
 endif
 
 config LGE_IRRC
