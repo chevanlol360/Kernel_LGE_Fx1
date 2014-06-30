@@ -481,3 +481,17 @@ config BROADCOM_BT_AUDIO
 	default n
 	help
 		Broadcom Bluetooth RF Silicon Audio
+
+
+#####################Zippy ADDITIONS#####################
+config SOUND_CONTROL_HAX_GPL
+	tristate "wcd93xx sound control hax"
+	default y
+	help
+	  FauxSound WCD93xx chipset sound control hacks
+
+config SOUND_CONTROL_HAX_3_GPL
+ 	tristate "new wcd93xx sound control hax"
+ 	default y
+ 	help
+ 	  FauxSound WCD93xx chipset sound control hacks 3.0 for deeper hax
