@@ -1,13 +1,13 @@
 LGE_Kernel_Fx1_Zippy
 ======================
 
-LG870 Zippy V4.2 Kernel. Also works on US780
+LG870 Zippy Kernel. Also works on US780
 
 How to Build
 ====================
 **This short guide assumes you're on Ubuntu 11.04 or above** and have your Android build enviroment setup already.
 
-Getting Simplicity Kernel source & tools
+Getting Zippy Kernel source & tools
 -------------------------------------------
 
 First, we need to create directories for the build so open Terminal and issue the follow commands:
@@ -56,4 +56,4 @@ Issue the following commands to loki your kernel
     $ cd Loki
     $ git clone https://github.com/chevanlol360/loki
     
-Go inside the Loki folder and doubble click on the runkernel.sh file and open it with terminal and when its done a new file called Zipboot.loki will be the output flash it to your device.  
+Go inside the Loki folder and doubble click on the runkernel.sh file and open it with terminal and when its done a new file called Zipboot.loki will be the output flash it to your device. Loki'ing the boot.img is optional, if you are running my Philz Recovery or my Clockwormod Recovery it will auto loki the boot.img after flashing.
