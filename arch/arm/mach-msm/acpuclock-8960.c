@@ -172,7 +172,6 @@ static struct acpu_level acpu_freq_tbl_slow[] __initdata = {
  	{ 1, {  1782000, HFPLL, 1, 0x42 }, L2(18), 1300000 },
  	{ 1, {  1836000, HFPLL, 1, 0x44 }, L2(18), 1325000 },
  	{ 1, {  1890000, HFPLL, 1, 0x46 }, L2(18), 1325000 },
- 	{ 1, {  1944000, HFPLL, 1, 0x48 }, L2(18), 1350000 },
 	{ 0, { 0 } }
 };
 
@@ -211,7 +210,6 @@ static struct acpu_level acpu_freq_tbl_nom[] __initdata = {
  	{ 1, {  1782000, HFPLL, 1, 0x42 }, L2(18), 1299000 },
  	{ 1, {  1836000, HFPLL, 1, 0x44 }, L2(18), 1299000 },
  	{ 1, {  1890000, HFPLL, 1, 0x46 }, L2(18), 1300000 },
- 	{ 1, {  1944000, HFPLL, 1, 0x48 }, L2(18), 1320000 },
 	{ 0, { 0 } }
 };
 
@@ -250,7 +248,6 @@ static struct acpu_level acpu_freq_tbl_fast[] __initdata = {
  	{ 1, {  1782000, HFPLL, 1, 0x42 }, L2(18), 1200000 },
  	{ 1, {  1836000, HFPLL, 1, 0x44 }, L2(18), 1225000 },
  	{ 1, {  1890000, HFPLL, 1, 0x46 }, L2(18), 1225000 },
-  	{ 1, {  1944000, HFPLL, 1, 0x48 }, L2(18), 1250000 },	
 	{ 0, { 0 } }
 };
 #ifdef CONFIG_MACH_LGE
