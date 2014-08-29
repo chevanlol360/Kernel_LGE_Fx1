@@ -1790,10 +1790,10 @@ static long vid_dec_ioctl(struct file *file,
 		struct vdec_seqheader seq_header;
 		struct vcd_sequence_hdr vcd_seq_hdr;
 		unsigned long ionflag;
-		memset((void *)&seqheader, 0,
+		memset((void *)&seq_header, 0,
 				sizeof(struct vdec_seqheader));
-		memset((void *)&seqheader, 0,
-				sizeof(struct vdec_seqheader));
+		memset((void *)&vcd_seq_hdr, 0,
+				sizeof(struct vcd_sequence_hdr));
 		DBG("VDEC_IOCTL_SET_SEQUENCE_HEADER\n");
 		if (copy_from_user(&vdec_msg, arg, sizeof(vdec_msg))) {
 			ERR("Copy from user vdec_msg failed\n");
