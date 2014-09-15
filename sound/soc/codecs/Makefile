@@ -212,7 +212,6 @@ obj-$(CONFIG_SND_SOC_MSM_STUB)  += snd-soc-msm-stub.o
 
 
 #####################Zippy ADDITIONS#####################
-obj-$(CONFIG_SOUND_CONTROL_HAX_GPL) += sound_control_gpl.o
 obj-$(CONFIG_SOUND_CONTROL_HAX_3_GPL) += sound_control_3_gpl.o
 #####################Zippy ADDITIONS END#####################
 
